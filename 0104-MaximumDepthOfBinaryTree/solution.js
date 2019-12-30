@@ -9,6 +9,8 @@
  * @param {TreeNode} root
  * @return {number}
  */
+// can solution
+// iterative
 var maxDepth = function(root) {
     let toVisit = [];
     let max = 0;
@@ -30,4 +32,14 @@ var maxDepth = function(root) {
     }
     return max;    
 };
+
+//recursive solution
+// var maxDepth = function(root) {
+//     if (!root) return 0;
+    
+//     const leftDepth = maxDepth(root.left);
+//     const rightDepth = maxDepth(root.right);
+    
+//     return Math.max(leftDepth, rightDepth) + 1;
+// }
 
